@@ -1,0 +1,47 @@
+.container{
+    height: 700px;
+    border: 1px solid red;
+    background-color: yellow;
+
+    display: grid;
+
+    grid-template-rows:30px 150px 400px 30px;
+    grid-template-columns: 400px; 
+
+    /*it is used to assign a name to a row like we assign hd to 1st row and side to 2nd row and furter*/
+    grid-template-areas: 
+    "hd"
+    "side"
+    "main"
+    "ft";
+
+    /* grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 250px 600px; */
+
+    /*if we give more no. of rows in this then it make that much row but with little size*/
+    /* grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "side side side main main main main main"
+    "ft ft ft ft ft ft ft ft" */
+
+
+
+}
+.box{
+    border:1px solid green;
+    background-color: aqua;
+
+}
+/*with the help of grid template area we can fit our box like header any where by using grid -area name of that place like hd for header*/
+#header{
+    grid-area:hd;
+}
+#sidebar{
+    grid-area:side;
+}
+#content{
+    grid-area: main;
+}
+#footer{
+    grid-area: ft;
+}

@@ -1,0 +1,45 @@
+.container{
+    border: 1px solid brown;
+    background-color: yellow;
+    height: 700px;
+    width: 400px;
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    grid-gap:10px;
+    
+    /*take it from horizontal axis this */
+    /* justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around; */
+    
+    /*take it from vertical axis in there particular space created in designing matrix*/
+    /* align-items:start;
+    align-items: end;
+    align-items:baseline;
+    align-items:center; */
+    
+    /*this is a property work according to the vertical axis and this all grid items shift from there postion not from there matrix block like in align-items*/
+    /* align-content: end; */
+
+    /*we can use a place-content property which tell about both justify cotent and align-cotent*/
+    place-content: center;
+
+    /*we can use a place-items property which tell about justify items ,align items */
+    place-items: center;
+}
+.box{
+    border:1px solid red;
+    background-color: aqua;
+}
+#box1{
+    /*it is used to set property for particular block or grid items from horizontal*/
+   justify-self: center;
+
+   /*it is used to set property for particular block or grid items from vertical*/
+   /* align-self: baseline;
+   align-self: center; */
+}
