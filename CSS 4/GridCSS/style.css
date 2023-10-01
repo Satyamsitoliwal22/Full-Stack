@@ -1,0 +1,32 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.container{
+    background-color: brown;
+    height:500px;
+    border:3px solid black;
+    display: grid;/*with this we create grid this create distance between box1,2,3,4*/
+    /* grid-template-columns: 200px 200px 210px; the no. of values we define that much column get created with that size here we can use unit fr instead of px because fr divide whole size into equal parts for every grid items it make website responsive for mobiles etc */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);/*in this first value represent no.column and second size which is same for all*/
+    grid-template-rows: 90px 90px 90px; 
+    gap:10px;/*it is used to increase the size of border of grid matrix or we can say it spaces between grid items */
+
+}
+.box{
+    background-color: aqua;
+    border:3px solid black;
+    /* width:80px; */
+    /* height:80px; */
+}
+#box1{
+  grid-column-start: 1;/*it is use to do a spand in column from start to end*/
+  grid-column-end: 3;
+ 
+}
+#box3{
+    grid-row-start: 2;/*it is use to do a spand in row from start to end**/
+    grid-row-end: 4;
+}
