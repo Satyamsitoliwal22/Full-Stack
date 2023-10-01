@@ -1,0 +1,16 @@
+/*Types of overflow values */
+/*1.overflow-visible - in this content is outside the div is visible*/
+/*2.overflow-hidden-in this the content outside the div does not visible to us got hidden*/
+/*3.overflow-sroll-it create an sroll option in div */
+/*4.overflow-auto- it behave as overflow-visible or sroll*/
+.box{
+    max-height: 100px; /*maximum height is an property in which maximium height is set if content limit is more than max height then conten go out of div box to avoid this problem we use an css property name overflow*/
+    border: 1px solid black;
+    overflow:scroll; /*this is to avoid content outside flow*/
+}
+.mydiv{
+    margin:10px;
+    border: 1px solid black;
+    min-height: 100px;  /*in min height the content if content is inside the div then no problem but if overflow of content situation comes then height grows automatically like an vector*/
+
+}

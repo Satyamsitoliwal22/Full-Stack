@@ -1,0 +1,28 @@
+p{
+    position: static;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border:1px solid black;
+    display: inline-block;  /*we used to proprty to make block elemnts to come in a singe line */
+}
+/* .box{
+    border: 1px solid black;
+    position: relative; /*for position to work we have to define left or bottom,or top or right*/
+    /* left:50px;
+    top:100px
+} */ 
+
+#c{
+      /*now to only shift box 3 we used an position realtive for box 3*/
+      position:relative;
+      top:10px;
+}
+#a{
+    position: fixed; /*by doing this we can fixed poistion of block and if we go down in a webpage in this we fixed block compare to view port*/
+}
+#d{
+    position: sticky;
+}

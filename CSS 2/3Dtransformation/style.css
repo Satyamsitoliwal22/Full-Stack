@@ -1,0 +1,15 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border:1px solid black;
+}
+.translated{
+    transform: perspective(10px) translateZ(-10px); /*we have to add persepective in z direction always to see changes*/
+    /*in z direction we see tranformation from our eyes to the webpage plane because that is a z palne where changes occur for z direction*/
+}
+.scaled{
+    margin-left: 500px;
+    transform: perspective(10px) scaleZ(5) rotateX(100deg) rotateY(300deg);
+    /*there is no need to use presepetive in rotaion along z direction*/
+}

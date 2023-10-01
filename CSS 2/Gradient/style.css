@@ -1,0 +1,20 @@
+/*default direction in background image is top to bottom*/
+/*we can use diffrent direction like 
+     to right,to left,to bottom.to top,to bottom left,to bottom right,to top right,to top left*/
+/*we can use angle also to tell about direction*/
+.box{
+    border: 1px solid black;
+    height:200px;
+    width: 150px;
+    background-image: linear-gradient(red,blue);
+    background-image: linear-gradient( to right ,red,blue);
+    background-image: linear-gradient( to bottom,rgba(255,0,0,0),rgba(0,0,255,1)); /*in rgba last value is for tarsparency or optacity*/
+
+}
+.mydiv{
+    border: 1px solid black;
+    margin: 10px;
+    height:300px;
+    background-image: radial-gradient(circle,red,blue,orange);
+    background-image: radial-gradient(10%red,20%blue,40%orange); /*we can use an percentage in defining the how much value colour should be used*/
+}

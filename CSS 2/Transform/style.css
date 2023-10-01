@@ -1,0 +1,8 @@
+.box{
+    background-color: aqua;
+    transform: translate(100px ,100px); /*in this translate (x,y) shifting from xdirection and shifting in y direction*/
+    transform: rotate(-45deg); /*in this if we use postive angle it move in clockwise and negative angle then move in anticlock wise*/
+    transform: scale(2,4);  /*it used to scale or we can to zoom content in this first value reptesent horizontal scale and second value vertical scale */
+    transform: skew(-45deg);  /*it is used to tile the div tag */ 
+}
+/*homework learn matrix transform*/
