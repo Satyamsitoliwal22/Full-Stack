@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height:100vh;
+    overflow-x: hidden; /*with the help of this we can hidden the scroll in x direction or in y deirection*/
+    overflow-y:auto;
+    perspective: 10px;/*to use z direction we have to use perspective */
+}
+.container{
+    position: relative;/*we have to make it realtive so that we can make position absolute for image foreground and background as it is property of absolute */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    transform-style: preserve-3d;/*if we does not use this property then 3d effect will not come both images foreground,background attched to each other*/
+    z-index: -1;/*it is used to do scaling of layer which layer comes on which in z direstion*/
+}
+.background{
+    transform: translateZ(-40px) scale(6);/*with the help of this we have to translate image background in z axis direction*/
+}
+.foreground{
+    transform: translate(-20px) scale(1);/*with the help of this we translate foreground image in in z axis direction*/
+}
+.background,.foreground{
+      position: absolute;/*we have to position between images absolute so that we can overlap both images foreground,background */
+      height:100%;
+      width:100%;
+      z-index: -1;
+      object-fit:cover;
+}

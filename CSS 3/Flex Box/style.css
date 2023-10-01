@@ -1,0 +1,47 @@
+/*universal selector*/
+/* *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.container{
+    height:400px;
+    border: 10px solid black;
+    display:flex; /*we have to use this property to do flex in css and by using this box1,2,3,4 comes in vertical  direction */
+    flex-direction:row; /*we can change an direction of items flex by using this here items flex are box1,2,3,4*/
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap; /*by doing this we can make width fized if we change size of an webpage */
+    justify-content: flex-start; /*this property apply on main axis means it change alignment related to main axis  , with the help of this we can change the slignmrnt of items flex or child*/
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items:flex-end ; /*this property works on cross axis  means it change alignment related to cross axis*/
+    align-items: baseline;/*we this property to make content at centre present in items flex*/
+
+    /*we can make content comes at centre by using justify-content,align-items making it value at centre */
+    /*we can use gap property to create gap between the items flex*/
+
+    align-content: flex-start;/*it is use to do the alginment of between all items flex present */
+
+}
+.box{
+    border: 1px solid brown;
+    background-color: blue;
+    width: 50px;
+}
+#box1{
+    order:1;/*we use this to change order beteen the items flex and if we increas order then items flex goes backwards*/
+    flex-grow: 1; /*with the help of this we can change size of an items flex */
+    flex-shrink: 2;/*with the help this we can change the rate at which items flez size change when we change size of an webpage*/
+    flex-basis: 100px;/*with the help of flex basis we can habdle the width of items flez by defining this if we increse content of items flex then it automatically increse the size of items flex*/ /*but if we define width of items flex using width proprty ten it trim the content which go inside but flex-basis is diffrent*/
+    align-self: flex-end;
+}
+#box3{
+    order:8;
+}
+#box2{
+    order:5;
+    align-self: flex-end;/*with the help of this we use to change the alignment of particular items flex*/
+}
