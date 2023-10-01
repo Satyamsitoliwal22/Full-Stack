@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    height:100%;
+    max-width: 1200px; /*if size of content incase then block size does not incrases and remain same or we can also use width also*/
+    margin: 0 auto;/*it is used to make content at centre */
+    padding: 20px;
+}
+ h1{
+    text-align: center;
+    margin:20px 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+.gallery{
+    display: flex ;
+    flex-wrap: wrap;  /*we use this because my making display flex we know that every image comes in horizontal but we does not need that is why e use an wrap*/
+    justify-content: space-between;
+   
+}
+.card{
+      width: 32%;   /* Through this we mention that only 3 iamges can come in 1 row */ /* why we only use value 32% of width because width of gallery is 100% we need 3 images so 32+32+32=96 and 4% is for space between image this 2% on each */
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow:hidden;
+}
+.card img{ /*here we use an class name card which contain img tag so all property is apply on img only*/
+    width:100%;/*by this we set image on full lenght on card or parent tag that is card of iamge tag*/
+    height: 100%;
+    filter: grayscale(100%);/*with the help of this we made our image black and white */
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+}
+.card:hover{
+    transform: scale(1.03);/*to increase the size*/
+    filter: drop-shadow(0 0 10px #333);
+    transition: 0.3s;/*timming in which it react*/
+} 
+
+.card:hover img{
+    filter: grayscale(0%);
+}
+
+.card figcaption{
+   position: absolute;
+   bottom: 0;
+   left:0;
+   padding: 25px;
+   width: 100%;
+   height: 20%;
+   font-size:16px;
+   font-weight: 500;
+   color:#fff;
+   opacity: 0;/*with the help of this we make image1 written visible only when we hover on it  */
+   border-radius: 0 0 10px 10px;
+   background:linear-gradient(0deg ,rgba(0 0 0 0.5)0% , rgba(255 255 255));
+   transition: 0.3s;
+}
+.card:hover figcaption{
+    opacity:1;
+    transform:scale(1.03);
+}
