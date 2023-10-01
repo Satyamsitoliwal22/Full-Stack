@@ -1,0 +1,20 @@
+.container{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.box{
+    /* width:72px; */
+    /* border:1px solid black; */
+   align-self: center;
+}
+button{
+      border-radius: 0px;
+      transform: scale(180%);
+      color:white;
+      background-color: crimson;
+      border:0px;
+      box-shadow: 2px;
+}

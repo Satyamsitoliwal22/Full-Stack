@@ -1,0 +1,48 @@
+.container{
+    width: 100%;
+    height: 215px;
+    background-color: yellow;
+    border:2px solid red
+}.box{
+    height: 212px;
+    width: 212px;
+    background-color: aqua;
+    border: 2px solid green;
+
+    animation-name: babbar;
+    animation-duration: 5s;
+    /*how many times animation runs*/
+    animation-iteration-count: 4;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    /* animation-direction: normal; */
+}
+/*keyframes ia propert from which we can apply diffrent animation at particular point like diffrent css proprty*/
+@keyframes babbar{
+    0%{
+    width: 212px;
+    background-color: aqua;
+    }
+    30%{
+          width: 35%;
+          background-color: aquamarine;
+    }
+    65%{
+      width: 70%;
+      background-color: blue;
+    }
+    100%{
+        width: 100%;
+        background-color: blueviolet;
+
+    }
+}
+
+/* @keyframes babbar {
+    from{
+         width: 212px;
+    }
+    to{
+        width: 800px;
+    }
+} */

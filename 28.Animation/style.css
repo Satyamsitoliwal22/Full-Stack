@@ -1,0 +1,21 @@
+/*As we know that root elemnt scope is global that we declare variable in it so thst we can use it anywhere in othwe class*/
+/*root is an parent of all the tag present in DOM or HTML file*/
+:root{
+    --dark-red:#9821c9;
+}
+.container{
+    border: 1px solid brown;
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    background-color:var(--dark-red);
+}
+.box{
+    border: 2px solid green;
+    background-color: aqua;
+    /*declare variable */
+    /*we can use the variable (--dark-red) outside this class because it scope is in this only e we declare it in it */
+    --dark-red:#9821c9;
+    /*used variable with the help of var() function*/
+    color: var(--dark-red);
+}
