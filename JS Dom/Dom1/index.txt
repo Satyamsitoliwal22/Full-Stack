@@ -1,0 +1,35 @@
+1.windows - it is an global object all dom,bom lie in it control browser window through this
+2.DOM - all js is covert to object that is called dom i.e document
+3.BOM- in this java script communicate with browser
+
+DOM it create tree like structure
+
+To get an content of particular id we use an document name getElementbyid()(example document. getElementbyid('heading'))
+To get an content of particular class we use an document name getElementsbyclass()(same as above example)
+To get an content of particular tag we use an document name getElementbytagname()
+
+$0 -to ecuate any tag by selecting on screen
+
+we can use an querySelector to select class,id by there name for example dcument.querySelector('.classname,#idname) - its output is always single 
+
+2.property use for update of existing content in web page
+
+1.innerHTML - it use to get or set the the html content,
+2.outerHTML
+3.textContent- it is same as innerHTML but differance is that i text content read inner tag of main tag as it is but in innerHTML the inner tag is also convert according to tag
+ textContent read all content as a text only if it is tag
+
+3.Adding new element
+
+ 1.we can use an let newpara=createElement (pass elemnt which we want to create ) and append it in any html tag like appendChild(newpara) by this new tag aded always at last
+2. now we can add content in new tag that we are inserting by createtextnode()
+
+4.remove elemenet - in this we need parent,and child element parent.child
+
+5.we change css property by style.csstext 
+ 1.to change more than one property we can usestyle.csstext
+ 2.we can also used setAttribute('style',colr: ,background-color: )
+ 3.classname,classlist
+
+1:10:00 revision
+

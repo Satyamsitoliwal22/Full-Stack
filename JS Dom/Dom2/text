@@ -1,0 +1,29 @@
+1.Browser events - it is like an annoucement we want that we want when we click then only the java script file runs not at starting only
+
+1.event target - it is a top level entity,interface
+ in this event is clicking button and there is listner which decide what to do action after this 
+methods are 
+->add event listner
+->remove event listner
+->dispatch event
+
+1.add event listner
+it require 3 things
+1.event target- konsa component pa (p,h1,document ,div,article video)
+2.event type- click,scroll,etc
+3.function- it is like a action define what we have to do
+
+example document.addEventListener('click',function(){console.log('i clicked on documenet')});
+
+2.remove event listner
+-> it is remove the change created by event listner by using same function as used in event listner
+->as in javassrcipt two function with same reult is differnt because they w=ae two different object
+-> it works when these condition get fullfilled
+1.same target
+2.same type
+3.same function
+
+Phases of event-
+1.capturing phase-it is a phase where finding event listner in code
+2.at target phase- in this we get an event listner
+3.bubbling phase-in this we backtrack after getting event listner to intial postion
