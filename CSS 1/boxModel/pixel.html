@@ -1,0 +1,48 @@
+<!--unit used depend on parent tag-->
+<!--1.% percentage loke in div1,div2 example-->
+
+<!--Absolute Unit-->
+<!--mm,cm,,in,px-->
+
+<!--Relative unit to font size-->
+<!--1.em it dpend on parent tag font value by default parent tag is body same in this we define 9em then it becomes 9em*16px in case of body and 9em*value that parent tag contain-->
+<!--2.rem relative to root and root is html tag means if we define 1rem for tag then it becomes 1rem*16px -->
+
+<!--Relative unit to view port-->
+<!--1.vw  = 1/100*width of viewport-->
+<!--2.vh = 1/100*height of viewport-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            background-color: red;
+            width:500px;
+            height: 100px;
+        }
+        #div2{
+            background-color: aqua;
+            width: 10%;
+            height:50px;
+            margin:10px;
+            padding: 10px;
+        }
+        #first-para{
+            background-color: aqua;
+            width: 50vw;
+            height:50vh;
+        }
+    </style>
+</head>
+<body>
+    <!--in this div2 has width equal to the 10% of div1 width-->
+    <div id="div1">
+        <div id="div2"></div>
+    </div>
+    <p id="first-para">First para</p>
+</body>
+</html>

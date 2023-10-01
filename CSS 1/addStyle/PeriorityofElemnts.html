@@ -1,0 +1,34 @@
+<!--Specificity-->
+<!--it is an concept which tell us about the periority of selector -->
+<!--Periority increases by going downwards compare to above Selector-->
+<!--Tag selector
+    Class Selector
+    id Selector
+    inline CSS-->
+
+<!--we can use an !important to discard periority-->
+<!--if we write !important just after the css property then that Selector get highest pirority -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color:orange !important;
+        } 
+        .para{
+            color:aqua;
+        }
+        #first-para{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <p class="para" id="first-para" style="color:blue">This is a paragraph</p>
+</body>
+</html>

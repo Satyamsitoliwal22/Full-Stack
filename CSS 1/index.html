@@ -1,0 +1,73 @@
+<!--Selector Element -->
+<!--with the help of this we do css-->
+
+<!--1.Elemnt selector-->
+<!--in this we select tag directly-->
+
+<!--2.Class Selector-->
+<!--it is use to apply style or css on particular group-->
+<!--to acces class we use (.) operator in starting-->
+
+<!--3.ID Selector-->
+<!--it is used to define an css for one particular tag only-->
+<!--id is always unique-->
+<!--we access id with the hekp of (#) operator-->
+
+<!--3.Pseudo-Classes Selector-->
+<!--It is used to do same action when we go on that particular tag so for that we use pseudo selector-->
+
+<!--4.Multiple Selector-->
+<!--it used when we have to apply something on diffrent tag then we create group of tag and write css-->
+<!--for example that we done in table,th,tr,td tag-->
+
+<!--Homework-->
+<!--Universal,Nested,Attribute Selector -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*Element Selector*/
+      p {
+        color: brown;
+      }
+      h1 {
+        background-color: blue;
+      }
+      /*Class sellector*/
+      .green {
+        color: blueviolet;
+      }
+      /*ID Selector*/
+      #first {
+        color: aquamarine;
+      }
+      /*Pseudo-classes Selector*/
+      button:hover {
+        color: red;
+      }
+      a:hover {
+        color: red;
+      }
+      .link-colour:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is paragraph</p>
+    <h1>This is an website</h1>
+
+    <p class="green">abcd</p>
+    <p class="green">pqrs</p>
+    <p class="blue">xyz</p>
+
+    <button id="first">Submit</button>
+    <a href="www.google.com">Google</a><br />
+    <a class="link-colour" href="www.youtube.com">Youtube</a>
+  </body>
+</html>
