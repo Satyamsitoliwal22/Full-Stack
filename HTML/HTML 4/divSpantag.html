@@ -1,0 +1,45 @@
+<!--Div Tag-->
+<!--div tag is also called container tag -->
+<!--It is an genric tag ,division tag,can be used with any other tag-->
+<!--div tag is block element-->
+
+<!--Span Tag-->
+<!--span tag is same as div tag but one difference is that div is block elemnt while span is inline element -->
+<!--span tag that a space which is content require it does not take whole space that is why it is an inline elelemnt-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*with the help of display -inline we can convert div to inline by default css of div contain display-block*/
+        div{
+            color:aqua;
+            display: inline;
+        }
+        .div{
+            color:red;
+        }
+        #seconddiv{
+              color:brown;
+        }
+        /*if we add display -block in span it becomes div*/
+        span{
+            background-color: blue;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <!--we make two div tag then content of second div tag is comes in new line-->
+    <div class="div">This inside the div</div>
+    <div id="seconddiv">This second div</div>
+     
+    <br>
+    <span>First span</span>
+    <span>Second span</span>
+</body>
+</html>

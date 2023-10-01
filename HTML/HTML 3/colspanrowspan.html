@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       table,tr,td,th{
+            border:1px solid black;
+            border-collapse: collapse; 
+            text-align: center;
+            caption-side: bottom;
+        }
+    </style>
+</head>
+<body>
+    <table>
+       <tr>
+        <!--to do a colspan or rowspan we have to remove an row and col resepectively to make an expand-->
+        <!--like in this we remove row abcd to do colspan-->
+        <td colspan="2">abcd</td>
+        <!-- <td>abcd</td> -->
+        <td>abcd</td>
+       </tr>
+       <tr >
+        <td>abcd</td>
+        <td rowspan="3">abcd</td>
+        <td>abcd</td>
+       </tr>
+       <tr>
+        <td>abcd</td>
+        <td>abcd</td>
+        <!-- <td>abcd</td> -->
+       </tr>
+       <tr>
+        <td>abcd</td>
+        <td>abcd</td>
+        <!-- <td>abcd</td> -->
+       </tr>
+       <tr>
+        <td>abcd</td>
+        <td>abcd</td>
+        <td>abcd</td>
+       </tr>
+    </table>
+    <br>
+    <br>
+    <table >
+        <caption>My first table</caption>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td rowspan="2" colspan="2">xyz</td>
+            <!-- <td>pqr</td> -->
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <!-- <td>abcd</td> -->
+            <!-- <td>wxy</td> -->
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <!--we use colgroup tag and col tag to make chnges in css of column of table -->
+            <!--in coltag we use span attribute to show how many column is to take for css changing and style for styling-->
+            <colgroup>
+              <col span="3" style="background-color: aqua;">
+            </colgroup>
+            <th  rowspan="2">Sate of Health</th>
+            <th colspan="2">Fasting Value</th>
+            <th>After Eating</th>
+        </tr>
+        <tr>
+            <!-- <th></th> -->
+            <th>Minimum</th>
+            <th>Maximum</th>
+            <th>2hour Eating</th>
+        </tr>
+        <tr>
+            <th >Health</th>
+            <th>70</th>
+            <th>100</th>
+            <th>less 140</th>
+        </tr>
+        <tr>
+            <th >pre-dib</th>
+            <th>101</th>
+            <th>126</th>
+            <th>140-200</th>
+        </tr>
+        <tr>
+            <th >Diabetes</th>
+            <th>more than 126</th>
+            <th>NA</th>
+            <th>more than 200</th>
+        </tr>
+    </table>
+</body>
+</html>

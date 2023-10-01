@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          table,tr,td,th{
+            border:1px solid black;
+            border-collapse: collapse; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+           <!--colspan is an property in which column take more space or we can say that col get expand-->
+           <!--here we can see that colspan 2 means it span by two column in direction of row -->
+            <th colspan="2">Month</th>
+            <!-- <th>Savings</th> -->
+        
+        </tr>
+        <tr>
+            <th>Jan</th>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Feb</th>
+            <td>300</td>
+        </tr>
+        <tr>
+            <!-- <th>March</th> -->
+            <td>400</td>
+        </tr>
+              <tr>
+            <!-- <th>Total</th> -->
+            <td>800</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table>
+     
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+       
+        <tr>
+            <th rowspan="6">Hour</th>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>fri</td>
+        </tr>
+        <tr>
+         
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+          
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+           
+            <th colspan="6">Lunch</th>
+          
+        </tr>
+        <tr>
+           
+            <td>Science</td>
+            <td>Maths</td>
+            <td>science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+           
+        </tr>
+    </table>
+
+   
+</body>
+</html>
